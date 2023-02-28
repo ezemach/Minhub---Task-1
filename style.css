@@ -1,0 +1,15 @@
+.b-marron {
+    background-color: brown;
+}
+
+.b-brown2 {
+    background-color: chocolate;
+}
+
+.b-brown3 {
+    background-color: rgb(178, 79, 9);
+}
+
+#carouselExample {
+    padding: 2rem;
+}
