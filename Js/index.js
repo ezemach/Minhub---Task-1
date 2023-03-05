@@ -1,21 +1,5 @@
 const MyMain = document.getElementById("main");
 
-const tarjeta = {
-      _id: "639c723b992482e5f2834be9",
-      name: "Collectivities Party",
-      image: "https://i.postimg.cc/Fs03hQDt/Collectivities-Party.jpg",
-      date: "2021-12-12",
-      description:
-        "Enjoy your favourite dishes, from different countries, in a unique event for the whole family.",
-      category: "Food Fair",
-      place: "Room A",
-      capacity: 45000,
-      assistance: 42756,
-      price: 5,
-      __v: 0,
-    };
-
-
 function crearTarjetaInner(tarjeta){
     let template =
   `<div class="card d-flex container-fluid b-brown3 text-light col-12 col-sm-6 col-md-6 col-lg-3 my-3"      style="width: 15rem;">
@@ -31,6 +15,7 @@ function crearTarjetaInner(tarjeta){
 `
 return template
 }
+
 
 function completarTarjetas(listaEventos, elemento ){
     let template = '';
