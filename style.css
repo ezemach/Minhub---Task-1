@@ -19,3 +19,7 @@
 #carouselExample {
     padding: 2rem;
 }
+
+#main {
+    min-height: 80vh;
+}
