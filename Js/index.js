@@ -113,17 +113,17 @@ let array2 = array
 // [] = []
 
 
-let numeros =[1, 2,3,4,5]
+// let numeros =[1, 2,3,4,5]
 
-let numeroNuevo = numeros.filter(numero=> numero > 2 )
+// let numeroNuevo = numeros.filter(numero=> numero > 2 )
 
-console.log(numeroNuevo)
+// console.log(numeroNuevo)
 
-let nombres =["ezequiel", "nicolas", "jose"]
+// let nombres =["ezequiel", "nicolas", "jose"]
 
-let Nnombres = nombres.map (nombre => nombre.toLocaleUpperCase() + ".")
+// let Nnombres = nombres.map (nombre => nombre.toLocaleUpperCase() + ".")
 
-console.log(Nnombres)
+// console.log(Nnombres)
 
 
 
