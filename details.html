@@ -46,8 +46,27 @@
         </nav>
     </header>
 
-    <Main class="d-flex flex-column align-items-stretch b-brown2 py-5" class="main" id="main">
-    
+    <Main class="d-flex flex-column align-items-stretch b-brown2 py-5 main" id="app" v-cloak>
+        <div class="card mb-3 container-fluid d-flex align-items-center bg-danger" style="max-width: 840px; 
+        --bs-bg-opacity: .5;" >
+            <div class="row g-0 container-fluid d-flex align-items-center ">
+                <div class="col-md-4" id="imagen-detalles">
+                    <img :src="tarjetasFiltradas.image" :alt="tarjetasFiltradas.name" style="height: 300px;" class="d-flex img-fluid rounded-3 ">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold fs-2">{{tarjetasFiltradas.name}}</h5>
+                        <p class="card-text"><b>date: </b>{{tarjetasFiltradas.date}}</p>
+                        <p class="card-text"><b>description: {{tarjetasFiltradas.description}}</p>
+                        <p class="card-text"><b>category: </b>{{tarjetasFiltradas.category}}</p>
+                        <p class="card-text"><b>place: </b>{{tarjetasFiltradas.place}}</p>
+                        <p class="card-text"><b>capacity: </b>{{tarjetasFiltradas.capacity}}</p>
+                        <p class="card-text"><p>{{change}} : {{tarjetasFiltradas[change]}}</p>
+                        <p class="card-text"><b>price: </b>{{tarjetasFiltradas.price}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </Main>
 
 
@@ -68,11 +87,12 @@
         </div>
     </footer>
 
-    <script src="Js/data.js"></script>
-    <script src="Js/details.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="Js/details.js"></script>
+    
 </body>
 
 </html>

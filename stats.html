@@ -73,7 +73,7 @@
         </div>
     </header>
 
-    <Main class=" container-fluid d-flex flex-column b-brown2 py-5">
+    <Main class=" container-fluid d-flex flex-column b-brown2 py-5" id="app">
         <div class="container">
             <table class="table table-bordered table-responsive text-light">
                 <thead>
@@ -86,9 +86,12 @@
                         <td>Event with larger capacity</td>
                     </tr>
                 </thead>
-                <tbody id="PrimerosEventos">
-                    
-                                   
+                <tbody>
+                    <tr>
+                        <td>{{mayorAsistencia.name}}</td>
+                        <td >{{menorAsistencia.name}}</td>
+                        <td>{{mayorCapacidad.name}}</td>
+                    </tr>        
                 </tbody>
                 <thead>
                     <tr>
@@ -100,8 +103,15 @@
                         <td>Percentage of attendance</td>
                     </tr>
                 </thead>
-                <tbody id="PastEventos">
-                   
+                <tbody >
+                    <template v-for="(results , category) in categories">
+                        <tr>
+                            <td>{{category}}</td>
+                            <td>{{results.price.toLocaleString()}}</td>
+                            <td>{{((results.estimate / results.capacity)*100).toFixed(2)}}%</td>
+                        </tr>
+                    </template>
+                </tbody>
                 <thead>
                     <tr>
                         <th colspan="3" class="bg-danger">Past Events Statistics by category</th>
@@ -112,9 +122,15 @@
                         <td>Percentage of attendance</td>
                     </tr>
                 </thead>
-                <tbody id="FutEventos">
-                    
-        
+                <tbody>
+                <template v-for="(results , category) in categories2">
+                    <tr>
+                        <td>{{category}}</td>
+                        <td>{{results.price.toLocaleString()}}</td>
+                        <td>{{((results.assistance / results.capacity)*100).toFixed(2)}}%</td>
+                    </tr>
+                </template>
+                </tbody>
             </table>
         </div>
     </Main>
@@ -136,11 +152,12 @@
         </div>
     </footer>
 
-    <script src="./Js/stats.js"></script>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./Js/stats.js"></script>
+
 </body>
 
 </html>

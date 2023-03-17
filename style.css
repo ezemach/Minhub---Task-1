@@ -21,5 +21,9 @@
 }
 
 #main {
+    min-height: 70vh;
+}
+
+.main {
     min-height: 80vh;
 }
