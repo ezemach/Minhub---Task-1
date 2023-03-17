@@ -8,7 +8,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
     </head>
-    <body>
+    <body >
     <header>
     <nav class="navbar navbar-expand-lg bg-warning">
         <div class="container-fluid">
@@ -38,8 +38,7 @@
     </nav>
     </header>
 
-    <Main class="container-fluid d-flex flex-column align-items-stretch b-brown2 col-12 ">
-    <div id="carouselExample" class="carousel slide b-marron" >
+    <div id="carouselExample" class="carousel slide b-marron">
         <div class="carousel-inner  d-flex justify-content-center">
             <div class="carousel-item active">
                 <a class="nav-link text-light fs-1" href="#">Home</a>
@@ -66,107 +65,29 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-
-
-    <nav class="navbar d-flex ">
-        <div class="container-fluid d-flex justify-content-around py-5">
-        <div class="btn-group d-flex grid gap-4 " role="group" aria-label="Basic checkbox toggle button group">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-            <label class="form-check-label text-light" for="flexCheckChecked">
-                Category
-            </label>
-        
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label text-light" for="flexCheckDefault">
-                Category
-            </label>
-        
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label text-light" for="flexCheckDefault">
-                Category
-            </label>
-        
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label text-light" for="flexCheckDefault">
-                Category
-            </label>
-        
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label text-light" for="flexCheckDefault">
-                Category
-            </label>
-        </div>
-
-        <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-light DocSearch-Search-Icon" type="submit">
-
-            <svg width="20" height="20" class="DocSearch-Search-Icon" viewBox="0 0 20 20">
-                <path
-                    d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z"
-                    stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path>
-            </svg>
-            </button>
-        </form>
     
-        </div>
+    
+    <nav class="navbar container-fluid d-flex flex-row justify-content-around py-5 b-brown2 col-12 ">
+            <div class="btn-group d-flex grid gap-4" role="group" aria-label="Basic checkbox toggle button group" id="checkCategory">
+                
+            </div>
+    
+            <form class="d-flex" role="search" >
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="idSearch">
+                <button class="btn btn-outline-light DocSearch-Search-Icon" type="submit">
+    
+                    <svg width="20" height="20" class="DocSearch-Search-Icon" viewBox="0 0 20 20">
+                        <path
+                            d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z"
+                            stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                    </svg>
+                </button>
+            </form>
     </nav>
 
-    <div class="row py-5">
-        <div class="card d-flex container-fluid b-brown3 text-light col-12 col-sm-6 col-md-6 col-lg-3 my-3" style="width: 18rem;">
-            <img src="./images/books.jpg" class="card-img-top" alt="libros"  height="200px">
-            <div class="card-body">
-                <h5 class="card-title">School Book Fair</h5>
-                <p class="card-text">Bring your unused school book and bring the one you need.</p>
-                <div class="card-body d-flex justify-content-around">
-                    <p class ="card-text">Price 1</p>
-                    <a href="./details.html" class="btn btn-warning">more details</a>
-                </div>
-            </div>
-        </div>
-        <div class="card d-flex container-fluid b-brown3 text-light col-12 col-sm-6 col-md-6 col-lg-3 my-3"
-            style="width: 18rem;">
-            <img src="./images/Salida al museo5.jpg" class="card-img-top" alt="Museum" height="200px">
-            <div class="card-body">
-                <h5 class="card-title">Museum</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's
-                    content.</p>
-                <div class="card-body d-flex justify-content-around">
-                    <p class="card-text">Price $175</p>
-                    <a href="#" class="btn btn-warning">more details</a>
-                </div>
-            </div>
-        </div>
-        <div class="card d-flex container-fluid b-brown3 text-light col-12 col-sm-6 col-md-6 col-lg-3 my-3"
-            style="width: 18rem;">
-            <img src="./images/Concierto de musica1.jpg" class="card-img-top" alt="concierto" height="200px">
-            <div class="card-body">
-                <h5 class="card-title">Concert</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                    content.</p>
-                <div class="card-body d-flex justify-content-around">
-                    <p class="card-text">Price $150</p>
-                    <a href="#" class="btn btn-warning">more details</a>
-                </div>
-            </div>
-        </div>
-        <div class="card d-flex container-fluid b-brown3 text-light col-12 col-sm-6 col-md-6 col-lg-3 my-3"
-            style="width: 18rem;">
-            <img src="./images/Maraton3.jpg" class="card-img-top" alt="Maraton" height="200px">
-            <div class="card-body">
-                <h5 class="card-title">Maraton</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's
-                    content.</p>
-                <div class="card-body d-flex justify-content-around">
-                    <p class="card-text">Price $100</p>
-                    <a href="#" class="btn btn-warning">more details</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
+    <Main class="row py-5 b-brown2 " id="main" >
+        
     </Main>
 
 
@@ -187,6 +108,9 @@
         </div>
     </footer>
 
+    <script src="Js/data.js"></script>
+    <script src="Js/index.js"></script>
+    <script src="Js/details.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
